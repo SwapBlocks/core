@@ -18,8 +18,8 @@ services:
     image: core
     container_name: ark-devnet-core
     ports:
-     - "4002:4002"
-     - "4003:4003"
+     - "4102:4102"
+     - "4103:4103"
     volumes:
      - core:/core
     tty: true

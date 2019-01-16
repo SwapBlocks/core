@@ -33,13 +33,13 @@ module.exports = {
     },
     "@arkecosystem/core-p2p": {
         host: process.env.CORE_P2P_HOST || "0.0.0.0",
-        port: process.env.CORE_P2P_PORT || 4000,
+        port: process.env.CORE_P2P_PORT || 4100,
         whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
     },
     "@arkecosystem/core-blockchain": {
         fastRebuild: false,
     },
     "@arkecosystem/core-forger": {
-        hosts: [`http://127.0.0.1:${process.env.CORE_P2P_PORT || 4000}`],
+        hosts: [`http://127.0.0.1:${process.env.CORE_P2P_PORT || 4100}`],
     },
 };

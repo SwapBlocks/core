@@ -11,7 +11,7 @@ const mockAxios = new MockAdapter(axios);
 
 jest.setTimeout(30000);
 
-const host = `http://127.0.0.1:4000`;
+const host = `http://127.0.0.1:4100`;
 
 let client: Client;
 
@@ -39,7 +39,7 @@ describe("Client", () => {
         it("accepts 1 or more hosts as parameter", () => {
             expect(new Client(host).hosts).toEqual([host]);
 
-            const hosts = [host, "http://localhost:4000"];
+            const hosts = [host, "http://localhost:4100"];
 
             expect(new Client(hosts).hosts).toEqual(hosts);
         });

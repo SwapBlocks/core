@@ -12,7 +12,7 @@ afterAll(async () => {
 
 describe("Server", () => {
     it("should render the page", async () => {
-        const response = await axios.get("http://localhost:4006/");
+        const response = await axios.get("http://localhost:4106/");
 
         expect(response.status).toBe(200);
         expect(response.data).toContain("Top 51 Delegates Stats");

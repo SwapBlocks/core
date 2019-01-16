@@ -12,7 +12,7 @@ import { sortTransactions } from "../../src/utils/sort-transactions";
 const dummy = {
     plainPassphrase: "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire",
     bip38Passphrase: "6PYTQC4c2vBv6PGvV4HibNni6wNsHsGbR1qpL1DfkCNihsiWwXnjvJMU4B",
-    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+    publicKey: "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
     address: "ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
 };
 

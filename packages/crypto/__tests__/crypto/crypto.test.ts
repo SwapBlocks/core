@@ -161,7 +161,7 @@ describe("crypto.js", () => {
             const signature = crypto.sign(transaction, keys);
             // @ts-ignore
             expect(signature.toString("hex")).toBe(
-                "3045022100f5c4ec7b3f9a2cb2e785166c7ae185abbff0aa741cbdfe322cf03b914002efee02206261cd419ea9074b5d4a007f1e2fffe17a38338358f2ac5fcc65d810dbe773fe",
+                "3045022100f5c4ec7b3f9a2cb2e785166c7ae185abbff0aa741cbdfe322cf03b914102efee02206261cd419ea9074b5d4a007f1e2fffe17a38338358f2ac5fcc65d810dbe773fe",
             );
         });
     });

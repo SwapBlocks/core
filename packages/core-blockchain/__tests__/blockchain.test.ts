@@ -386,7 +386,7 @@ async function __resetToHeight1() {
 
 function __mockPeer() {
     // Mocking a peer which will send blocks until height 155
-    peerMock = new Peer("1.0.0.99", 4002);
+    peerMock = new Peer("1.0.0.99", 4102);
     Object.assign(peerMock, peerMock.headers, { status: 200 });
 
     axiosMock
@@ -414,7 +414,7 @@ function __mockPeer() {
                 {
                     status: 200,
                     ip: peerMock.ip,
-                    port: 4002,
+                    port: 4102,
                     height: 155,
                     delay: 8,
                 },

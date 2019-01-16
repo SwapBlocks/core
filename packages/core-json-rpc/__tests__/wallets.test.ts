@@ -16,7 +16,7 @@ let peerMock;
 beforeAll(async () => {
     await setUp();
 
-    peerMock = new Peer("1.0.0.99", 4002);
+    peerMock = new Peer("1.0.0.99", 4102);
     Object.assign(peerMock, peerMock.headers, { status: "OK" });
 
     const monitor = app.resolvePlugin("p2p");
@@ -39,7 +39,7 @@ beforeEach(async () => {
                 {
                     status: "OK",
                     ip: peerMock.ip,
-                    port: 4002,
+                    port: 4102,
                     height: 5,
                     delay: 8,
                 },

@@ -6,7 +6,7 @@ import "jest-extended";
 
 class Helpers {
     public async request(method, path, params = {}) {
-        const url = `http://localhost:4003/api/${path}`;
+        const url = `http://localhost:4103/api/${path}`;
         const headers = {
             "API-Version": 1,
             "Content-Type": "application/json",
@@ -84,7 +84,7 @@ class Helpers {
             .getStruct();
 
         await axios.post(
-            "http://127.0.0.1:4003/api/v2/transactions",
+            "http://127.0.0.1:4103/api/v2/transactions",
             {
                 transactions: [transaction],
             },

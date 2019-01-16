@@ -91,7 +91,7 @@ describe("API 1.0 - Transactions", () => {
         });
 
         // fixquery
-        // http://localhost:4003/api/transactions?orderBy=timestamp:desc&offset=0&limit=50&recipientId=ANwZGjK55pe4xSWfnggt324S9XKY3TSwAr&senderId=ANwZGjK55pe4xSWfnggt324S9XKY3TSwAr
+        // http://localhost:4103/api/transactions?orderBy=timestamp:desc&offset=0&limit=50&recipientId=ANwZGjK55pe4xSWfnggt324S9XKY3TSwAr&senderId=ANwZGjK55pe4xSWfnggt324S9XKY3TSwAr
 
         it("should fail using limit > 100", async () => {
             const limit = 101;

@@ -6,7 +6,7 @@ import { ApiHelpers } from "../../../core-test-utils/src/helpers/api";
 
 class Helpers {
     public async request(method, path, params = {}) {
-        const url = `http://localhost:4003/api/${path}`;
+        const url = `http://localhost:4103/api/${path}`;
         const headers = {
             "API-Version": 2,
             "Content-Type": "application/json",
@@ -18,7 +18,7 @@ class Helpers {
     }
 
     public async requestWithAcceptHeader(method, path, params = {}) {
-        const url = `http://localhost:4003/api/${path}`;
+        const url = `http://localhost:4103/api/${path}`;
         const headers = {
             Accept: "application/vnd.core-api.v2+json",
             "Content-Type": "application/json",
@@ -159,7 +159,7 @@ class Helpers {
             .getStruct();
 
         await axios.post(
-            "http://127.0.0.1:4003/api/v2/transactions",
+            "http://127.0.0.1:4103/api/v2/transactions",
             {
                 transactions: [transaction],
             },

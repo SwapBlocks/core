@@ -5,7 +5,7 @@ import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 
 const mockAddress = "1.0.0.99";
-const mockPort = 4002;
+const mockPort = 4102;
 
 beforeAll(async () => {
     await setUp();
@@ -76,7 +76,7 @@ describe("API 1.0 - Peers", () => {
         });
 
         it("should fail using valid port with no ip address", async () => {
-            const response = await utils.request("GET", "peers/get", { port: 4002 });
+            const response = await utils.request("GET", "peers/get", { port: 4102 });
             utils.expectError(response);
 
             expect(response.data.error).toBe("should have required property 'ip'");

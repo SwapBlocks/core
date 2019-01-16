@@ -11,8 +11,8 @@ const defaultOpts = {
 };
 beforeEach(() => {
     // Just passthru. We'll test the Command class logic in its own test file more thoroughly
-    mockAxios.onGet("http://localhost:4003/api/v2/node/configuration").reply(200, { data: { constants: {} } });
-    mockAxios.onGet("http://localhost:4000/config").reply(200, { data: { network: {} } });
+    mockAxios.onGet("http://localhost:4103/api/v2/node/configuration").reply(200, { data: { constants: {} } });
+    mockAxios.onGet("http://localhost:4100/config").reply(200, { data: { network: {} } });
     jest.spyOn(axios, "get");
     jest.spyOn(axios, "post");
 });
@@ -33,14 +33,14 @@ describe("Commands - Vote", () => {
             delegate: expectedDelegate,
         };
         const command = await Vote.init(opts);
-        mockAxios.onGet(/http:\/\/localhost:4003\/api\/v2\/delegates.*/).reply(200);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onGet(/http:\/\/localhost:4103\/api\/v2\/delegates.*/).reply(200);
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
 
         await command.run();
 
         expect(axios.post).toHaveBeenNthCalledWith(
             2,
-            "http://localhost:4003/api/v2/transactions",
+            "http://localhost:4103/api/v2/transactions",
             {
                 transactions: [
                     expect.objectContaining({
@@ -64,10 +64,10 @@ describe("Commands - Vote", () => {
             delegate: null,
         };
         const command = await Vote.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
-        mockAxios.onGet(/http:\/\/localhost:4003\/api\/v2\/delegates\/.*/).reply(200); // call to delegates/{publicKey}/voters
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onGet(/http:\/\/localhost:4103\/api\/v2\/delegates\/.*/).reply(200); // call to delegates/{publicKey}/voters
         // call to /delegates
-        mockAxios.onGet(/http:\/\/localhost:4003\/api\/v2\/delegates/).reply(200, {
+        mockAxios.onGet(/http:\/\/localhost:4103\/api\/v2\/delegates/).reply(200, {
             meta: { pageCount: 1 },
             data: [{ publicKey: expectedDelegate }],
         });
@@ -76,7 +76,7 @@ describe("Commands - Vote", () => {
 
         expect(axios.post).toHaveBeenNthCalledWith(
             2,
-            "http://localhost:4003/api/v2/transactions",
+            "http://localhost:4103/api/v2/transactions",
             {
                 transactions: [
                     expect.objectContaining({

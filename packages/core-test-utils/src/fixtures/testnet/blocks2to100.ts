@@ -216,7 +216,7 @@ export const blocks2to100 = [
         totalFee: "0",
         payloadLength: 0,
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
         blockSignature:
             "30440220125c9e17f524e4153853449c9f86961751f3225c1f3fbe4c0bb8eb3e66d9a3d802202d7cef058d1b3f5ce7ac7840d23aaefa595228ecff9aa30be41c6b809c5e7997",
         createdAt: "2018-09-11T16:50:26.340Z",
@@ -709,13 +709,13 @@ export const blocks2to100 = [
         totalFee: "0",
         payloadLength: 0,
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
         blockSignature:
             "3045022100d978d3336898294151c583d7c2b8f4b578a9af41eba08ae399d02b16815c61da02204ce7f53790358a8bf48e9bbc9019de7e6f827fe0a7bf015fb7ded4579b3229b5",
         createdAt: "2018-09-11T16:57:14.417Z",
     },
     {
-        id: "16477448205939004004",
+        id: "16477448205939004104",
         version: 0,
         timestamp: 46583842,
         height: 44,
@@ -737,7 +737,7 @@ export const blocks2to100 = [
         timestamp: 46583850,
         height: 45,
         reward: "0",
-        previousBlock: "16477448205939004004",
+        previousBlock: "16477448205939004104",
         numberOfTransactions: 0,
         totalAmount: "0",
         totalFee: "0",
@@ -796,7 +796,7 @@ export const blocks2to100 = [
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         generatorPublicKey: "03747096ce60f19e52e99f5d80ae1ddedf6fa88be4ff0669b33f75f3fd991cff28",
         blockSignature:
-            "3045022100c7cd9708728c454006f1df0cb1de64c62a82e2df1d94b3fc2d8319fb78e7240d022066ce9e73f7039f949e412d19cb257c1ea818fb84d64d89d63409508ed802eacc",
+            "3045022100c7cd9708728c454106f1df0cb1de64c62a82e2df1d94b3fc2d8319fb78e7240d022066ce9e73f7039f949e412d19cb257c1ea818fb84d64d89d63409508ed802eacc",
         createdAt: "2018-09-11T16:57:54.296Z",
     },
     {
@@ -1219,7 +1219,7 @@ export const blocks2to100 = [
         totalFee: "0",
         payloadLength: 0,
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+        generatorPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
         blockSignature:
             "304402200fd5424d5304c669c1a8455a92490f1aab3005ad435ba4efda443b28ef6fe34902200c38c4b23213b42022ba551cdf6b26b8e29a4239ab88fd939e72f2f096821ea7",
         createdAt: "2018-09-11T17:04:58.343Z",
@@ -1323,7 +1323,7 @@ export const blocks2to100 = [
         payloadHash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         generatorPublicKey: "0305322487b6dfe8abe67f680bed2df70d92379a48840dd636b32a2c142baa1055",
         blockSignature:
-            "3044022052171485017323ec5ee011d4fa110a9e9137b2043ee6d0ec5f6da56bbf713f1102203744e54783bf400353b0221b2454b09ebdbddebe30a3d1c62fd7a1fc4cd5dd7f",
+            "3044022052171485017323ec5ee011d4fa110a9e9137b2043ee6d0ec5f6da56bbf713f1102203744e54783bf410353b0221b2454b09ebdbddebe30a3d1c62fd7a1fc4cd5dd7f",
         createdAt: "2018-09-11T17:05:46.419Z",
     },
     {
@@ -1344,7 +1344,7 @@ export const blocks2to100 = [
         createdAt: "2018-09-11T17:05:54.345Z",
     },
     {
-        id: "9843400248178032761",
+        id: "9843410248178032761",
         version: 0,
         timestamp: 46584362,
         height: 81,
@@ -1366,7 +1366,7 @@ export const blocks2to100 = [
         timestamp: 46584370,
         height: 82,
         reward: "0",
-        previousBlock: "9843400248178032761",
+        previousBlock: "9843410248178032761",
         numberOfTransactions: 0,
         totalAmount: "0",
         totalFee: "0",
@@ -1633,7 +1633,7 @@ export const blocks2to100 = [
         createdAt: "2018-09-11T17:08:10.443Z",
     },
     {
-        id: "5940078448948565481",
+        id: "5941078448948565481",
         version: 0,
         timestamp: 46584498,
         height: 98,
@@ -1655,7 +1655,7 @@ export const blocks2to100 = [
         timestamp: 46584506,
         height: 99,
         reward: "0",
-        previousBlock: "5940078448948565481",
+        previousBlock: "5941078448948565481",
         numberOfTransactions: 0,
         totalAmount: "0",
         totalFee: "0",

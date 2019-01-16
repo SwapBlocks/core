@@ -18,8 +18,8 @@ services:
     image: core
     container_name: ark-testnet-core
     ports:
-     - "4000:4000"
-     - "4003:4003"
+     - "4100:4100"
+     - "4103:4103"
     volumes:
      - core:/core
     tty: true

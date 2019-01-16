@@ -46,7 +46,7 @@ module.exports = {
         server: {
             enabled: process.env.CORE_WEBHOOKS_API_ENABLED,
             host: process.env.CORE_WEBHOOKS_HOST || "0.0.0.0",
-            port: process.env.CORE_WEBHOOKS_PORT || 4004,
+            port: process.env.CORE_WEBHOOKS_PORT || 4104,
             whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
         },
     },

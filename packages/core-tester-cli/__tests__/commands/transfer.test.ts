@@ -11,8 +11,8 @@ const defaultOpts = {
 };
 beforeEach(() => {
     // Just passthru. We'll test the Command class logic in its own test file more thoroughly
-    mockAxios.onGet("http://localhost:4003/api/v2/node/configuration").reply(200, { data: { constants: {} } });
-    mockAxios.onGet("http://localhost:4000/config").reply(200, { data: { network: {} } });
+    mockAxios.onGet("http://localhost:4103/api/v2/node/configuration").reply(200, { data: { constants: {} } });
+    mockAxios.onGet("http://localhost:4100/config").reply(200, { data: { network: {} } });
     jest.spyOn(axios, "get");
     jest.spyOn(axios, "post");
 });
@@ -37,7 +37,7 @@ describe("Commands - Transfer", () => {
             recipient: expectedRecipientId,
         };
         const command = await Transfer.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
         let expectedTransactions = [];
         jest.spyOn(axios, "post").mockImplementation((uri, { transactions }) => {
             expectedTransactions = transactions;
@@ -66,7 +66,7 @@ describe("Commands - Transfer", () => {
             number: expectedTxCount,
         };
         const command = await Transfer.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
         let expectedTransactions = [];
         jest.spyOn(axios, "post").mockImplementation((uri, { transactions }) => {
             expectedTransactions = transactions;
@@ -93,7 +93,7 @@ describe("Commands - Transfer", () => {
             recipient: expectedRecipientId,
         };
         const command = await Transfer.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
         let expectedTransactions = [];
         jest.spyOn(axios, "post").mockImplementation((uri, { transactions }) => {
             expectedTransactions = transactions;
@@ -118,7 +118,7 @@ describe("Commands - Transfer", () => {
             secondPassphrase: "she sells sea shells down by the sea shore",
         };
         const command = await Transfer.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
         let expectedTransactions = [];
         jest.spyOn(axios, "post").mockImplementation((uri, { transactions }) => {
             expectedTransactions = transactions;

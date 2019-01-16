@@ -1,6 +1,6 @@
 export const defaults = {
     host: process.env.CORE_P2P_HOST || "0.0.0.0",
-    port: process.env.CORE_P2P_PORT || 4002,
+    port: process.env.CORE_P2P_PORT || 4102,
     /**
      * The minimum peer version we expect
      */

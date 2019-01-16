@@ -3,7 +3,7 @@ import { resolve } from "path";
 export const defaults = {
     enabled: false,
     host: process.env.CORE_API_HOST || "0.0.0.0",
-    port: process.env.CORE_API_PORT || 4003,
+    port: process.env.CORE_API_PORT || 4103,
     cache: {
         enabled: true,
         /**

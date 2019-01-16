@@ -54,7 +54,7 @@
             "timestamp": 0,
             "asset": {},
             "senderPublicKey": "035b63b4668ee261c16ca91443f3371e2fe349e131cb7bf5f8a3e93a3ddfdfc788",
-            "signature": "304502210084d855eddfe616cf1dc238b19226c7959c2fc4027ae2e8aea6fd8e9eb8928e6b0220440f980e40c1c56348782fd69d49a96944df7ee5b68d18028600e0e7501d4000",
+            "signature": "304502210084d855eddfe616cf1dc238b19226c7959c2fc4027ae2e8aea6fd8e9eb8928e6b0220440f980e40c1c56348782fd69d49a96944df7ee5b68d18028600e0e7501d4100",
             "id": "9fdf6ae86f7c005b3b7dc1b9fb6411219407ecaa93adff85fdb61710f5121638",
             "senderId": "APnhwwyTbMiykJwYbGhYjNgtHiVJDSEhSn"
         },
@@ -805,7 +805,7 @@
                     "publicKey": "0395ff46d07f197dd4d4cb5dbb46e164c1e7ca9896c33827f9d6f8003ea167917a"
                 }
             },
-            "signature": "3045022100999f19fbdc9a12eebbb8c748a4cfc6c91b2233f333a09cddfd49dfeab6aaf38602203d8dc9d1551d400572a88ee812f51f897f8b35508713b789b2c1bf6dd0e88945",
+            "signature": "3045022100999f19fbdc9a12eebbb8c748a4cfc6c91b2233f333a09cddfd49dfeab6aaf38602203d8dc9d1551d410572a88ee812f51f897f8b35508713b789b2c1bf6dd0e88945",
             "id": "5d7e51d57b5914ec201ab65a019ecdf651c4f267cbffe403fd2170bb95145f9d",
             "senderId": "Aa3mWTMFTXeTJukUgpeihQLBYDHBzdpWZX"
         },
@@ -1052,12 +1052,12 @@
             "amount": 0,
             "fee": 0,
             "recipientId": null,
-            "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+            "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
             "timestamp": 0,
             "asset": {
                 "delegate": {
                     "username": "genesis_1",
-                    "publicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37"
+                    "publicKey": "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37"
                 }
             },
             "signature": "3044022013b2798a4ab4d741850abac10d962360cd4ab6a47dfac7c1c806d6f9c3d810cc02202742414ad8a04ce679b445fcd040fb877bbfed3d2692b873dec8cb46c01c8c4c",
@@ -1434,7 +1434,7 @@
                     "publicKey": "032b59ba992a9b8987b48606779d92101e4b332f6fcb47a4e61e9b49f2dbb45b2e"
                 }
             },
-            "signature": "3044022063903d82e8bd15a6741a298b9a6007d0dc3626acfe2f072c3b624ccbf91ce3360220486ba4cc5591d8aa31b77dfde025b61691dbaad0feabe13e840d26e40010c5df",
+            "signature": "3044022063903d82e8bd15a6741a298b9a6007d0dc3626acfe2f072c3b624ccbf91ce3360220486ba4cc5591d8aa31b77dfde025b61691dbaad0feabe13e840d26e41010c5df",
             "id": "5baf9e318c9e4cb0513a21eaea27e51c849f95fddc963207fb07aa2fd2b9f9d4",
             "senderId": "AZFEPTWnn2Sn8wDZgCRF8ohwKkrmk2AZi1"
         },
@@ -1892,7 +1892,7 @@
                 "votes": ["+02c39e352d0f3c4ea19842a5bca3114b4247cd56da72157963a5873ecfcd824aca"]
             },
             "signature": "3045022100b1ee6becc59d594776a40e5b3caec82390d273b703ecb0d7caece44953141449022016543cc29a28882845118afab6e51296cd216bc662260c28e5efd9597b6025b1",
-            "id": "2ce068bfccb3f967f4004e9a1e81614a738e55e45c80114c0af30a085f71a2e9",
+            "id": "2ce068bfccb3f967f4104e9a1e81614a738e55e45c80114c0af30a085f71a2e9",
             "senderId": "AeooqGMJPE5UWRPkKW6kgLGZu3898vcLPV"
         },
         {
@@ -2180,10 +2180,10 @@
             "amount": 0,
             "fee": 0,
             "recipientId": "ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo",
-            "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+            "senderPublicKey": "03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37",
             "timestamp": 0,
             "asset": {
-                "votes": ["+03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37"]
+                "votes": ["+03287bfebba4c7881a0509717e71b34b63f31e41021c321f89ae04f84be6d6ac37"]
             },
             "signature": "3045022100ded426768f114f459485ba6ae293c9649b340cf2dcb15e8e887fbb5fed6f7e0b0220752297022de6e93ff64bb9e07b4efef8e946cd2872f84d9e1cb3165ff5c342cb",
             "id": "0a16dc31514629a36d7237968ada6a95d6cbec027b7d26e1e0f0d7d4febe9494",

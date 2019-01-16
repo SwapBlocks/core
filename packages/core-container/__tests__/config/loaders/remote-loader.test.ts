@@ -18,7 +18,7 @@ afterAll(() => {
 
 beforeEach(() => {
     testSubject = new RemoteLoader({
-        remote: "127.0.0.1:4002",
+        remote: "127.0.0.1:4102",
         config: configDir,
         data: "./data",
     });
@@ -37,7 +37,7 @@ describe.skip("Remote Loader", () => {
         it("should not be OK", async () => {
             const mockExit = mockProcess.mockProcessExit();
 
-            axiosMock.onGet("http://127.0.0.1:4002/config/network").reply(() => [404, {}]);
+            axiosMock.onGet("http://127.0.0.1:4102/config/network").reply(() => [404, {}]);
 
             await testSubject.__configureNetwork();
 
@@ -45,7 +45,7 @@ describe.skip("Remote Loader", () => {
         });
 
         it("should be OK", async () => {
-            axiosMock.onGet("http://127.0.0.1:4002/config/network").reply(() => [
+            axiosMock.onGet("http://127.0.0.1:4102/config/network").reply(() => [
                 200,
                 {
                     data: require("../../crypto/src/networks/devnet.json"),
@@ -60,13 +60,13 @@ describe.skip("Remote Loader", () => {
 
     describe("__configureGenesisBlock", () => {
         it("should not be OK", async () => {
-            axiosMock.onGet("http://127.0.0.1:4002/config/genesis-block").reply(() => [404, {}]);
+            axiosMock.onGet("http://127.0.0.1:4102/config/genesis-block").reply(() => [404, {}]);
 
             await expect(testSubject.__configureGenesisBlock()).rejects.toThrowError();
         });
 
         it("should be OK", async () => {
-            axiosMock.onGet("http://127.0.0.1:4002/config/genesis-block").reply(() => [
+            axiosMock.onGet("http://127.0.0.1:4102/config/genesis-block").reply(() => [
                 200,
                 {
                     data: require("../../core/src/config/devnet/genesisBlock.json"),
@@ -83,7 +83,7 @@ describe.skip("Remote Loader", () => {
         it("should not be OK", async () => {
             const mockExit = mockProcess.mockProcessExit();
 
-            axiosMock.onGet("http://127.0.0.1:4002/config/peers").reply(() => [404, {}]);
+            axiosMock.onGet("http://127.0.0.1:4102/config/peers").reply(() => [404, {}]);
 
             await testSubject.__configurePeers();
 
@@ -91,7 +91,7 @@ describe.skip("Remote Loader", () => {
         });
 
         it("should be OK", async () => {
-            axiosMock.onGet("http://127.0.0.1:4002/config/peers").reply(() => [
+            axiosMock.onGet("http://127.0.0.1:4102/config/peers").reply(() => [
                 200,
                 {
                     data: require("../../core/src/config/devnet/peers.json"),
@@ -108,7 +108,7 @@ describe.skip("Remote Loader", () => {
         it("should not be OK", async () => {
             const mockExit = mockProcess.mockProcessExit();
 
-            axiosMock.onGet("http://127.0.0.1:4002/config/delegates").reply(() => [404, {}]);
+            axiosMock.onGet("http://127.0.0.1:4102/config/delegates").reply(() => [404, {}]);
 
             await testSubject.__configureDelegates();
 
@@ -116,7 +116,7 @@ describe.skip("Remote Loader", () => {
         });
 
         it("should be OK", async () => {
-            axiosMock.onGet("http://127.0.0.1:4002/config/delegates").reply(() => [
+            axiosMock.onGet("http://127.0.0.1:4102/config/delegates").reply(() => [
                 200,
                 {
                     data: require("../../core/src/config/devnet/delegates.json"),

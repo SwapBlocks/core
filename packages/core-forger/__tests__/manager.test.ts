@@ -29,7 +29,7 @@ afterAll(async () => {
 });
 
 beforeEach(() => {
-    defaults.hosts = [`http://127.0.0.1:4000`];
+    defaults.hosts = [`http://127.0.0.1:4100`];
     forgeManager = new ForgerManager(defaults);
 });
 

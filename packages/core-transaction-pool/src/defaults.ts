@@ -18,13 +18,13 @@ export const defaults = {
         addonBytes: {
             transfer: 100,
             secondSignature: 250,
-            delegateRegistration: 400000,
+            delegateRegistration: 410000,
             vote: 100,
             multiSignature: 500,
             ipfs: 250,
             timelockTransfer: 500,
             multiPayment: 500,
-            delegateResignation: 400000,
+            delegateResignation: 410000,
         },
     },
 };

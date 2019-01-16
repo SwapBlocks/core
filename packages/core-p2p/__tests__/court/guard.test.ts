@@ -26,7 +26,7 @@ beforeEach(async () => {
     guard.monitor.peers = {};
 
     // this peer is here to be ready for future use in tests (not added to initial peers)
-    peerMock = new Peer("1.0.0.99", 4002);
+    peerMock = new Peer("1.0.0.99", 4102);
     peerMock.milestoneHash = "dummy-milestone";
     Object.assign(peerMock, peerMock.headers);
 });

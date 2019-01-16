@@ -12,8 +12,8 @@ const defaultOpts = {
 };
 beforeEach(() => {
     // Just passthru. We'll test the Command class logic in its own test file more thoroughly
-    mockAxios.onGet("http://localhost:4003/api/v2/node/configuration").reply(200, { data: { constants: {} } });
-    mockAxios.onGet("http://localhost:4000/config").reply(200, { data: { network: {} } });
+    mockAxios.onGet("http://localhost:4103/api/v2/node/configuration").reply(200, { data: { constants: {} } });
+    mockAxios.onGet("http://localhost:4100/config").reply(200, { data: { network: {} } });
     jest.spyOn(axios, "get");
     jest.spyOn(axios, "post");
 });
@@ -32,7 +32,7 @@ describe("Commands - Delegate Registration", () => {
         const command = await DelegateRegistration.init(opts);
         const expectedDelegateName = "mr_bojangles";
         // call to delegates/{publicKey}/voters returns zero delegates
-        mockAxios.onGet(/http:\/\/localhost:4003\/api\/v2\/delegates/).reply(200, {
+        mockAxios.onGet(/http:\/\/localhost:4103\/api\/v2\/delegates/).reply(200, {
             meta: { pageCount: 1 },
             data: [],
         });
@@ -42,7 +42,7 @@ describe("Commands - Delegate Registration", () => {
 
         expect(axios.post).toHaveBeenNthCalledWith(
             2,
-            "http://localhost:4003/api/v2/transactions",
+            "http://localhost:4103/api/v2/transactions",
             {
                 transactions: [
                     expect.objectContaining({

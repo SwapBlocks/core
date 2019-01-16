@@ -167,7 +167,7 @@
             "passphrase": "spoon acquire valve pitch solution gentle cream cable reunion fog pyramid off",
             "keys": {
                 "publicKey": "038a782e4bf5dd01884daa65d13783148bb5b205f77a14f68c9eb6b3d9f8d5b0fd",
-                "privateKey": "ec42857c7473330105054006ac7b38d1a974d82a7d911f3cb88da223231987da",
+                "privateKey": "ec42857c7473330105054106ac7b38d1a974d82a7d911f3cb88da223231987da",
                 "compressed": true
             }
         },
@@ -283,7 +283,7 @@
             "address": "AZiXrft2ugGCqhZSTEBgnqpJyL8Tv91ZsW",
             "passphrase": "network join prevent fiber crack ill ankle sun body ball outdoor sudden",
             "keys": {
-                "publicKey": "0386a02a400516b6bc118fbfee4582614b41c52c9354cbfba059bb7815e7e96b8c",
+                "publicKey": "0386a02a410516b6bc118fbfee4582614b41c52c9354cbfba059bb7815e7e96b8c",
                 "privateKey": "fb8c465d4ae9453d9d4cb1776e34008def8ee18014e58314e2d9865bbbc76e83",
                 "compressed": true
             }

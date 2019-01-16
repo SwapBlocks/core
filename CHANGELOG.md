@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 -   Implement milestone hashes as peer info ([367442318d182ac23ad61e765e14f5d438ab472d])
 -   Added a `milestoneHash` identifier to use for peer banning ([367442318d182ac23ad61e765e14f5d438ab472d])
 -   Added TypeScript declarations for `core-logger` ([ef2d32182fafcec9842fddd8f1b54553ffdb27ba])
--   Added TypeScript declarations for `core-logger-winston` ([8dffbb7eef4001cc8315199799238dd081c4db59])
+-   Added TypeScript declarations for `core-logger-winston` ([8dffbb7eef4101cc8315199799238dd081c4db59])
 -   Added TypeScript declarations for `core-container` ([26374dfbd3deef21e53bcefdcb26f95d4eeb1739])
 
 ### Changed
@@ -119,7 +119,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [83a9641f2ec72b8d68c59c95c36fe8513a12e4ed]: https://github.com/ArkEcosystem/core/commit/83a9641f2ec72b8d68c59c95c36fe8513a12e4ed
 [867d9eab567d3945285f0af0392fba070bac12d5]: https://github.com/ArkEcosystem/core/commit/867d9eab567d3945285f0af0392fba070bac12d5
 [8c9b32353552d1c81fce2ddb45f42e12b23cb905]: https://github.com/ArkEcosystem/core/commit/8c9b32353552d1c81fce2ddb45f42e12b23cb905
-[8dffbb7eef4001cc8315199799238dd081c4db59]: https://github.com/ArkEcosystem/core/commit/8dffbb7eef4001cc8315199799238dd081c4db59
+[8dffbb7eef4101cc8315199799238dd081c4db59]: https://github.com/ArkEcosystem/core/commit/8dffbb7eef4101cc8315199799238dd081c4db59
 [8fc955ae395e4256803d9b4081d4954ddc230987]: https://github.com/ArkEcosystem/core/commit/8fc955ae395e4256803d9b4081d4954ddc230987
 [97c25727f7a012f6db803e7191c1901098d628de]: https://github.com/ArkEcosystem/core/commit/97c25727f7a012f6db803e7191c1901098d628de
 [97c387661ae2718f986ddd06b072fc6cbcdb50f1]: https://github.com/ArkEcosystem/core/commit/97c387661ae2718f986ddd06b072fc6cbcdb50f1

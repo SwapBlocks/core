@@ -1,7 +1,7 @@
 export const defaults = {
     server: {
         host: "0.0.0.0",
-        port: 4007,
+        port: 4107,
         whitelist: ["*"],
     },
     client: {

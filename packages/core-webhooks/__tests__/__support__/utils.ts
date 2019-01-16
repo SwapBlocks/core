@@ -2,7 +2,7 @@ import axios from "axios";
 import "jest-extended";
 
 function request(method, path, params = {}) {
-    const url = `http://localhost:4004/api/${path}`;
+    const url = `http://localhost:4104/api/${path}`;
     const instance = axios[method.toLowerCase()];
 
     return ["GET", "DELETE"].includes(method) ? instance(url, { params }) : instance(url, params);

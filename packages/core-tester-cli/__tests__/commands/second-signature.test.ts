@@ -11,8 +11,8 @@ const defaultOpts = {
 };
 beforeEach(() => {
     // Just passthru. We'll test the Command class logic in its own test file more thoroughly
-    mockAxios.onGet("http://localhost:4003/api/v2/node/configuration").reply(200, { data: { constants: {} } });
-    mockAxios.onGet("http://localhost:4000/config").reply(200, { data: { network: {} } });
+    mockAxios.onGet("http://localhost:4103/api/v2/node/configuration").reply(200, { data: { constants: {} } });
+    mockAxios.onGet("http://localhost:4100/config").reply(200, { data: { network: {} } });
     jest.spyOn(axios, "get");
     jest.spyOn(axios, "post");
 });
@@ -29,13 +29,13 @@ describe("Commands - Second signature", () => {
             number: 1,
         };
         const command = await SecondSignature.init(opts);
-        mockAxios.onPost("http://localhost:4003/api/v2/transactions").reply(200, { data: {} });
+        mockAxios.onPost("http://localhost:4103/api/v2/transactions").reply(200, { data: {} });
 
         await command.run();
 
         expect(axios.post).toHaveBeenNthCalledWith(
             2,
-            "http://localhost:4003/api/v2/transactions",
+            "http://localhost:4103/api/v2/transactions",
             {
                 transactions: [
                     expect.objectContaining({

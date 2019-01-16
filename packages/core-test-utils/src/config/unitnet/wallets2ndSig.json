@@ -74,7 +74,7 @@
             "address": "ALf5oWGQhq2xbTSZyCfDuvxbnDSjvYqiKE",
             "passphrase": "fluid nose monster age struggle actress long embody wise relief asthma there",
             "keys": {
-                "publicKey": "0264d678a13dddf54000ef95a38be00aa6e8698d82cbefa43c5c35808749d5053e",
+                "publicKey": "0264d678a13dddf54100ef95a38be00aa6e8698d82cbefa43c5c35808749d5053e",
                 "privateKey": "309a775302612ff309609031ea0bd81ac59eb59ffb71518fe5f93497a0284fb4",
                 "compressed": true
             },
@@ -434,7 +434,7 @@
             "address": "ANzBg5Kw43X2CSQgaBeHHubzw1swY25Frz",
             "passphrase": "hollow clown avoid rookie wish hobby leaf stove endorse play pudding web",
             "keys": {
-                "publicKey": "02e9725fb335e3e4a0163a43292428d696a71aa3e02a5d3bf1c400263360b13aa5",
+                "publicKey": "02e9725fb335e3e4a0163a43292428d696a71aa3e02a5d3bf1c410263360b13aa5",
                 "privateKey": "0877a6a91a647884acf4b80cd809eee72656165496d6b5193f3a2fd82d57d5ee",
                 "compressed": true
             },
