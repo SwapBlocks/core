@@ -65,3 +65,6 @@ peers_backup.json
 
 #Webstorm/Intellij
 .idea
+
+#Vim
+*.swp
