@@ -87,7 +87,7 @@ export class NetworkState {
         const lastBlock = app.resolvePlugin("blockchain").getLastBlock();
 
         const peers = monitor.getPeers();
-        const minimumNetworkReach = localConfig.get("minimumNetworkReach", 20);
+        const minimumNetworkReach = localConfig.get("minimumNetworkReach", 12);
 
         if (monitor.__isColdStartActive()) {
             return new NetworkState(NetworkStateStatus.ColdStart, lastBlock);
