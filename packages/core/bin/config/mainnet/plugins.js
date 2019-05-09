@@ -22,33 +22,33 @@ module.exports = {
             addonBytes: {
                 transfer: 100,
                 secondSignature: 250,
-                delegateRegistration: 400000,
+                delegateRegistration: 410000,
                 vote: 100,
                 multiSignature: 500,
                 ipfs: 250,
                 timelockTransfer: 500,
                 multiPayment: 500,
-                delegateResignation: 400000,
+                delegateResignation: 410000,
             },
         },
     },
     "@arkecosystem/core-p2p": {
         server: {
-            port: process.env.CORE_P2P_PORT || 4001,
+            port: process.env.CORE_P2P_PORT || 4101,
         },
     },
     "@arkecosystem/core-blockchain": {},
     "@arkecosystem/core-api": {
         enabled: !process.env.CORE_API_DISABLED,
         host: process.env.CORE_API_HOST || "0.0.0.0",
-        port: process.env.CORE_API_PORT || 4003,
+        port: process.env.CORE_API_PORT || 4103,
         whitelist: ["*"],
     },
     "@arkecosystem/core-webhooks": {
         enabled: process.env.CORE_WEBHOOKS_ENABLED,
         server: {
             host: process.env.CORE_WEBHOOKS_HOST || "0.0.0.0",
-            port: process.env.CORE_WEBHOOKS_PORT || 4004,
+            port: process.env.CORE_WEBHOOKS_PORT || 4104,
             whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
         },
     },
