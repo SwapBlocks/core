@@ -19,7 +19,7 @@ module.exports = {
             host: process.env.CORE_DB_HOST || "localhost",
             port: process.env.CORE_DB_PORT || 5432,
             database: process.env.CORE_DB_DATABASE || `${process.env.CORE_TOKEN}_unitnet`,
-            user: process.env.CORE_DB_USERNAME || process.env.CORE_TOKEN,
+            user: process.env.CORE_DB_USERNAME || "sbx",
             password: process.env.CORE_DB_PASSWORD || "password",
         },
     },
